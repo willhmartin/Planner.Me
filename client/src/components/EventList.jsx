@@ -4,6 +4,7 @@ import { EventsContext } from "../context/EventsContext";
 import { useHistory } from "react-router-dom";
 
 const EventList = () => {
+        console.log("Fetching events");
         const {events, setEvents, weather, setWeather, temp, setTemp, date, setDate} = useContext(EventsContext);
         let history = useHistory();
       useEffect(() => {

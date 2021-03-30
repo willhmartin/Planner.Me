@@ -9,6 +9,6 @@ CREATE TABLE events (
 
 CREATE TABLE notes (
     id BIGSERIAL NOT NULL PRIMARY KEY,
-    event_id BIGINT NOT NULL REFERENCES events(id) ON DELETE CASCADE,
+    event_id BIGINT NOT NULL,
     content TEXT NOT NULL
 );
