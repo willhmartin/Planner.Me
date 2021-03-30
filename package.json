@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "server": "nodemon server.js",
+    "start": "node server.js",
     "kill": "kill -9 $(lsof -i :5000) &>/dev/null | exit 0",
     "heroku-postbuild": "npm install && cd client && npm install --only-dev && npm install && npm run build"
   },
